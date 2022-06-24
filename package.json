@@ -1,0 +1,17 @@
+{
+  "name": "boilerplate-tailwind",
+  "version": "1.0.0",
+  "description": "Boilerplate Tailwind",
+  "scripts": {
+    "setup": "npm install && npm update",
+    "postcss": "postcss src/css/input.css -o dist/css/main.css --config ./config/",
+    "postcss:watch": "postcss src/css/input.css -o dist/css/main.css --config ./config/ --watch",
+    "copy": "copyfiles -u 1 src/*/** dist --exclude src/css/input.css && copyfiles -u 1 src/* dist --exclude src/css/input.css",
+    "dev": "npm run postcss:watch && npm run copy"
+  },
+
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "tailwindcss": "^3.1.4"
+  }
+}
