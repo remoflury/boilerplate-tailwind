@@ -2,7 +2,6 @@
   "devDependencies": {
     "tailwindcss": "^3.1.4"
   },
-
   "scripts": {
     "setup": "npm i && npm update",
     "postcss:watch": "npx tailwindcss -i src/css/input.css -o src/css/output.css --watch",
